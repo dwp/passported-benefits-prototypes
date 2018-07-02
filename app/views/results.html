@@ -1,13 +1,70 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Blank page
+  Support you're eligible for
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="#" onclick="window.history.back();">Back</a>
 {% endblock %}
 
 {% block content %}
 
 
-Results page
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds app-column-minimum">
+
+      <h1 class="govuk-heading-l">Support you're eligible for</h1>
+
+      <p>Based on the information DWP hold about you, you're eligible for the following extra support.</p>
+
+      <ol class="app-task-list">
+        <li>
+          <h2 class="app-task-list__section">You get free</h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <a class="apply-button button govuk-link" href="#">Apply online</a>
+              <p>NHS prescriptions</p>
+            </li>
+            <li class="app-task-list__item">
+              <a class="apply-button button govuk-link" href="#">Apply online</a>
+              <p>School meals</p>
+            </li>
+            <li class="app-task-list__item">
+              <a class="apply-button button govuk-link" href="#">Apply online</a>
+              <p>Legal aid</p>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <h2 class="app-task-list__section">You're entitled to money off</h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <a class="apply-button button govuk-link" href="#"><span aria-hidden="true" class="fa fa-print"></span> Print evidence</a>
+              <p>
+                New glasses and contact lenses
+              </p>
+            </li>
+            <li class="app-task-list__item">
+              <a class="apply-button button govuk-link" href="#">Apply online</a>
+              <p>
+                Repairing or replacing your glasses or contact lenses
+              </p>
+            </li>
+            <li class="app-task-list__item">
+              <a class="apply-button button govuk-link" href="#">Apply online</a>
+              <p>Travel for NHS treatment</p>
+
+            </li>
+
+          </ul>
+        </li>
+
+      </ol>
+
+    </div>
+  </div>
 
 
 
