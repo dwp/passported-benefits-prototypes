@@ -1,0 +1,295 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Blank page
+{% endblock %}
+
+{% block content %}
+
+<nav id="app-menu" class="claimant-tabbed-navigation" aria-label="Site navigation">
+  <ul class="claimant-tabbed-navigation__list">
+      <li class="claimant-tabbed-navigation__item active">
+        <a href="/agentview/1f871cd65e134b170937/dashboard" class="claimant-tabbed-navigation__link">Home</a>
+      </li>
+    <li class="claimant-tabbed-navigation__item ">
+      <a href="/agentview/1f871cd65e134b170937/to-do" id="to-do-tab" class="claimant-tabbed-navigation__link"><span class="visuallyhidden">Claimant's </span>To-do list</a>
+    </li>
+    <li class="claimant-tabbed-navigation__item ">
+      <a href="/agentview/1f871cd65e134b170937/journal" class="claimant-tabbed-navigation__link">Journal</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="subsection-controls">
+  <button class="js-print-button subsection-controls__print gutter-two-thirds-top">
+    <span aria-hidden="true" class="fa fa-print"></span> Print this statement
+  </button>
+</div>
+
+
+<h1 class="govuk-heading-xl">
+  <span id="id-subtitle" class="category heading-secondary">
+  </span>
+  <span class="js-page-title">
+Statement  </span>
+  <span class="category heading-secondary">
+
+  </span>
+</h1>
+
+        <div id="statement-summary" class="panel panel-info">
+  <p class="font-medium text-center gutter-bottom-none">
+    <span class="print-show-block">
+            <span id="claimant1-name">Jude Avocado-Gavin</span>
+    </span>
+   Your payment this month is
+    <span class="bold-xxlarge text-center block gutter-third-top" data-decimal-points="0" data-relative-id="summary-total" data-monetary-amount-total="uiPostAdjustmentTotal">
+        £919
+    </span>
+    This will be paid by 8pm on <span data-relative-id="payment-date">11 July 2018</span>
+  </p>
+</div>
+<h2 class="govuk-heading-l">
+  How we calculate your payment
+</h2>
+
+
+<div>
+  <p>Your payment is based on what you've told us and covers the period between
+    <span class="date-range">
+      <strong><span class="date-range__day">5</span>
+      <span class="date-range__month">June</span></strong>
+      <span>
+        and
+      </span>
+      <strong><span class="date-range__day">4</span>
+      <span class="date-range__month">July</span></strong>.
+    </span>
+  </p>
+</div>
+
+  <div id="panel-report-change-circs" class="panel panel-grey panel-print">
+    <p class="text bold">
+      It is important to tell Universal Credit immediately about any changes in your circumstances that could affect your Universal Credit payments.
+    </p>
+    <a href="/agentview/1f871cd65e134b170937/report">
+      Report a change in my circumstances
+    </a>
+  </div>
+
+    <div class="panel panel-print">
+      <div class="grid-wrapper">
+        <div class="grid grid-2-3 print-left">
+          <div class="inner-block">
+            <h3 class="govuk-heading-m gutter-half-top">
+              Standard allowance
+            </h3>
+            <p>
+              You receive a standard Universal Credit allowance each month
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-1-3 print-right">
+          <div class="inner-block">
+            <p class="bold-medium gutter-top">
+              <span id="standard-allowance-amount">£317.82</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-print">
+      <div class="grid-wrapper">
+        <div class="grid grid-2-3 print-left">
+          <div class="inner-block">
+            <h3 class="govuk-heading-m gutter-half-top">
+              Housing
+            </h3>
+                <p>
+    You said that your rent is
+    <span id="housing-rent-amount">£600.00</span>
+      per month, and you pay
+      <span id="housing-service-charges-amount">£100.00</span>
+      in service charges each month
+  </p>
+          </div>
+        </div>
+        <div class="grid grid-1-3 print-right">
+          <div class="inner-block">
+            <p class="bold-medium gutter-top">
+              <span id="housing-amount">£602.00</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+<div class="panel panel-grey panel-print">
+  <div class="grid-wrapper">
+    <div class="grid grid-1-2 print-left">
+      <div class="inner-block">
+        <h3 class="govuk-heading-m gutter-half-top">
+          Total before adjustments
+        </h3>
+      </div>
+    </div>
+    <div class="grid grid-1-2 print-right">
+      <div class="inner-block">
+        <p class="bold-large gutter-top text-right gutter-right">
+          <span id="pre-adjustment-total">
+              £919.82
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="panel panel-info panel-print">
+      <div class="grid-wrapper gutter-half-top">
+        <div class="grid grid-1-2">
+          <div class="inner-block">
+            <h3 class="govuk-heading-m gutter-half-top">
+              Total payment for this month
+            </h3>
+          </div>
+        </div>
+        <div class="grid grid-1-2 print-right text-right">
+          <div class="inner-block">
+            <p class="bold-xlarge gutter-half-top text-right gutter-right">
+              <span id="total-payment">£919.82</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<div class="print-page-break">
+    <h2 class="govuk-heading-l">
+      What can I do if I think this statement is incorrect?
+    </h2>
+
+    <p class="text">
+      It is important that you tell us straight away.
+    </p>
+
+    <p class="text" id="contact-details">
+      You can ask for a written explanation. You need to contact us
+      <strong class="bold-small">within 1 month of the date on this statement (5 July 2018).</strong>
+      Call us on 0800 328 5644 (Textphone: 0800 328 1344). Alternatively, you can write to us at Freepost DWP UNIVERSAL CREDIT FULL SERVICE.
+    </p>
+
+    <p class="text">
+      If you have new information that could affect your payment or think something has been overlooked, you can request a
+      <strong class="bold-small">mandatory reconsideration.</strong>
+      When we've looked at the decision again, we'll explain our reasons in a
+      <strong class="bold-small">mandatory reconsideration notice.</strong>
+    </p>
+
+    <h3 class="govuk-heading-m">
+      Can I appeal?
+    </h3>
+
+    <p class="text">
+      If after a mandatory reconsideration, you still disagree with our decision you can appeal it. Your mandatory reconsideration notice includes details on how to do this.
+    </p>
+
+    <h2 class="govuk-heading-m">Help managing your money</h2>
+
+    <p class="text">
+      If you have trouble making your money last for the month, you can
+        ask for help with budgeting.
+    </p>
+</div>
+<div class="print-page-break">
+      <div id="id-other-support-section-GREAT_BRITAIN">
+  <h2 class="govuk-heading-m">Other support you may be able to get</h2>
+  <div class="text">
+    <p>You may be able to get extra support, eg free school meals, food if you're pregnant or have a young child, help with legal costs and the costs of using courts or tribunals. You'll find more information about this on <a href="https://www.gov.uk/government/publications/universal-credit-and-other-benefits-quick-guide">GOV.UK</a></p>
+  </div>
+
+  <h3 class="govuk-heading-m gutter-half-top">Examples of support you can get</h3>
+  <div class="text">
+    <p>What you can get may depend on how much you earn.</p>
+    <p>Your take-home pay for this Universal Credit period is
+      <span class="bold">£0.00</span>.
+    </p>
+  </div>
+
+
+  <table class="gutter-bottom">
+  <caption class="visuallyhidden">The extra support available depending on your monthly income</caption>
+  <thead>
+  <tr>
+    <th scope="col" class="half-width">If your take-home pay per month is up to</th>
+    <th scope="col" class="half-width">You may be able to get help with</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      <p class="no-margin gutter-half-bottom bold">£435</p>
+      <p class="no-margin gutter-half-bottom">(or up to <span class="bold">£935</span> if you are responsible for a child or have limited capability for work)</p>
+      <p class="no-margin">There are currently no pay limits in Wales</p>
+    </td>
+    <td>
+      <dl>
+        <dt class="bold">Health costs</dt>
+        <dd>Including free NHS prescriptions, free NHS wigs and fabric supports, free NHS dental treatment, free sight tests in England (NHS eye examinations are already free in Scotland), vouchers towards the cost of glasses or contact lenses and help with the cost of travel to receive NHS treatment on referral.</dd>
+      </dl>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="bold">£1,250</p>
+    </td>
+    <td>
+      <dl>
+        <dt class="bold">Energy-saving home improvements</dt>
+        <dd>The ECO Affordable Warmth scheme may be able to help you with energy-saving measures like a new boiler or insulation.</dd>
+      </dl>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="no-margin gutter-half-bottom bold">£1,250</p>
+      <p class="no-margin">(including any other income)</p>
+    </td>
+    <td>
+      <dl>
+        <dt class="bold">Prison visits</dt>
+        <dd>If you're over 18 you can get help with the costs of visiting a close relative or partner in prison.</dd>
+      </dl>
+    </td>
+  </tr>
+  </tbody>
+</table>
+</div>
+
+  <p class="text" id="id-other-support-responsibility-section">It is your responsibility to make sure that any information you supply in support of your claim to any of these benefits is correct. Government departments can conduct checks on whether you are currently entitled to Universal Credit and on the amount you are earning.</p>
+</div>
+
+
+
+
+{% endblock %}

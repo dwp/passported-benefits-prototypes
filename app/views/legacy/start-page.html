@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Start page example
+{% endblock %}
+
+{% block header %}
+  {{ govukHeader({
+    "homepageUrl": "/",
+    "containerClasses": "govuk-width-container"
+  }) }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk/browse/benefits">Benefits</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk/browse/benefits/entitlement">How benefits work</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        {% if serviceName %} {{ serviceName }} {% endif %}
+      </h1>
+
+      <p>Use this service to:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Find out about extra support you could get, such as free prescriptions</li>
+        <li>Make an online application for support you're entitled to</li>
+        <li>Print evidence to prove your entitlement if needed</li>
+      </ul>
+
+
+      <div class="govuk-inset-text">
+        You can only use this service if you are already claiming Jobseekers' Allowance, Employment and Support Allowance, Income Support or Tax Credits.
+      </div>
+
+      <p>If you are claiming Universal Credit, you can find out what you're eligible for on your statement.</p>
+
+      <p>
+        <a href="/legacy/name" class="govuk-button govuk-button--start" role="button">Start now</a>
+      </p>
+
+      <h2 class="govuk-heading-m">Before you start</h2>
+
+      <p>You'll need to supply your National Insurance number.</a></p>
+
+    </div>
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">Related content</h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-body-s">
+              <li><a data-track-label="/child-benefit" data-track-options="{&quot;dimension28&quot;:&quot;8&quot;,&quot;dimension29&quot;:&quot;Claim Child Benefit&quot;}" href="/child-benefit">Claim Child Benefit</a></li>
+              <li><a data-track-label="/housing-benefit" data-track-options="{&quot;dimension28&quot;:&quot;8&quot;,&quot;dimension29&quot;:&quot;Housing Benefit&quot;}" href="/housing-benefit">Housing Benefit</a></li>
+              <li><a data-track-label="/income-support" data-track-options="{&quot;dimension28&quot;:&quot;8&quot;,&quot;dimension29&quot;:&quot;Income Support&quot;}" href="/income-support">Income Support</a></li>
+              <li><a data-track-label="/employment-support-allowance" data-track-options="{&quot;dimension28&quot;:&quot;8&quot;,&quot;dimension29&quot;:&quot;Employment and Support Allowance (ESA)&quot;}" href="/employment-support-allowance">Employment and Support Allowance (ESA)</a></li>
+              <li><a data-track-label="/jobseekers-allowance" data-track-options="{&quot;dimension28&quot;:&quot;8&quot;,&quot;dimension29&quot;:&quot;Jobseeker's Allowance (JSA)&quot;}" href="/jobseekers-allowance">Jobseeker's Allowance (JSA)</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+
+{% endblock %}
