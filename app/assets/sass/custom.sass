@@ -117,10 +117,54 @@ ol.app-task-list
     padding-left: 0px
     .app-task-list__item
       p
-        font-size: 1em
+        // font-size: 1em
         margin-bottom: 0px
       a.apply-button
         float: right
+
+.app-task-list
+  .description
+    display: none
+    visibility: hidden
+    margin: 5px 0px
+    font-size: 1em
+
+    a.onward-link
+      // float: right
+      display: inline-block
+      margin-bottom: 30px
+    p, ul
+      margin-top: 15px
+    &.open
+      display: block
+      visibility: visible
+  h4
+    font-family: 'nta', Arial, sans-serif
+    margin: 5px 0px
+  button
+    cursor: pointer
+    border: 0
+    background: none
+    padding: 0
+    margin: 0
+    text-align: left
+    width: 100%
+    font-size: 1em
+    font-family: 'nta', Arial, sans-serif
+    &:focus
+      outline: 3px solid #ffbf47
+      outline-offset: 0
+    .show-label
+      margin-top: 5px
+      float: right
+      color: $govuk-link-colour
+    &:hover
+      color: $govuk-link-colour
+      .show-label
+        text-decoration: underline
+  .fa.fa-check
+    margin-right: 5px
+    color:  govuk-colour("green")
 
 @media (min-width: 641px)
   .two-thirds-limited h3,  .two-thirds-limited h2
